@@ -16,3 +16,21 @@ describe "Testeamos a neo" {
   }
 
 }
+
+describe "Testeamos a morfeo" {
+
+  test "morfeo no es el elegido" {
+    assert.notThat(morfeo.esElElegido())
+  }
+
+  test "vitalidad inicial de morfeo" {
+    assert.equals(8, morfeo.vitalidad())
+  }
+
+  test "vitalidad y cansancio de morfeo despues de un salto" {
+    morfeo.saltar()
+    assert.equals(7, morfeo.vitalidad())
+    assert.that(morfeo.estaCansado())
+  }
+
+}
