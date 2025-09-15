@@ -41,6 +41,16 @@ object morfeo {
 }
 
 object trinity {
+    method vitalidad() {
+        return 0
+    }
+
+    method esElElegido() {
+        return false
+    }
+    method saltar() {
+      
+    }
 
 }
 

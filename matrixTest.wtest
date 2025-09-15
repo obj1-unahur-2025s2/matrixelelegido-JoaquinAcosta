@@ -34,3 +34,20 @@ describe "Testeamos a morfeo" {
   }
 
 }
+
+describe "Testeamos a trinity" {
+
+  test "trinity no es la elegida" {
+    assert.notThat(trinity.esElElegido())
+  }
+
+  test "vitalidad inicial de trinity" {
+    assert.equals(0, trinity.vitalidad())
+  }
+
+  test "vitalidad de trinity despues de un salto" {
+    trinity.saltar()
+    assert.equals(0, trinity.vitalidad())
+  }
+
+}
